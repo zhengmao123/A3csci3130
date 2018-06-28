@@ -9,8 +9,8 @@
     <EditText
         android:layout_width="395dp"
         android:layout_height="wrap_content"
-        android:id="@+id/name"
-        android:hint = "Name"
+        android:id="@+id/bid"
+        android:hint = "bid"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toRightOf="parent"
         android:layout_marginTop="8dp"
@@ -18,30 +18,60 @@
         android:layout_marginStart="8dp" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/name"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
-        android:hint="e-mail"
+        android:hint="name"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/bid"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+    <EditText
+        android:id="@+id/pb"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:hint="primebusiness"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/name"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="8dp" />
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:hint="address"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/pb"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+    <EditText
+        android:id="@+id/provice"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:hint="provice"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
 
     <Button
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Contact"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="submitInfoButton"
+        android:text="Create Contact"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintLeft_toLeftOf="parent"
 
-        android:onClick="submitInfoButton"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/provice" />
 
 </android.support.constraint.ConstraintLayout>
